@@ -16,3 +16,16 @@ body { padding: 0; margin: 0 }
 #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
 #unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+
+/* CrawlerKun: publicação responsiva */
+body { background: #15191f; color: #eadcc4; overflow: hidden; font-family: system-ui, sans-serif }
+#unity-container.unity-desktop { position: fixed; left: 0; top: 0; right: 0; bottom: 0; transform: none; width: 100%; height: 100% }
+#unity-fullscreen-container { width: 100vw !important; height: calc(100dvh - 38px) !important }
+.unity-mobile #unity-fullscreen-container { height: 100dvh !important }
+#unity-fullscreen-container:fullscreen { height: 100dvh !important }
+#unity-canvas { outline: none }
+#unity-footer { height: 38px; background: #15191f; color: #eadcc4 }
+#unity-logo { background: none; width: 230px; height: 90px; text-align: center; line-height: 90px; font-size: 32px; font-weight: 700; color: #ebc786 }
+#unity-progress-bar-empty { margin: 12px auto; }
+#loading-label { text-align: center; font-size: 14px }
+#unity-warning { z-index: 5; max-width: 80%; color: #16191e; }

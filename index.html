@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | CrawlerKun</title>
+    <title>CrawlerKun — Dungeon Crawler</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
       <div id="unity-fullscreen-container">
-        <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
+        <canvas id="unity-canvas" width="960" height="600" tabindex="0" aria-label="Jogo CrawlerKun"></canvas>
         <div id="unity-loading-container">
           <div id="unity-loading-bar">
-            <div id="unity-logo"></div>
-            <div id="unity-progress-bar-empty">
+            <div id="unity-logo">CrawlerKun</div>
+            <div id="loading-label" role="status">Carregando a aventura…</div><div id="unity-progress-bar-empty">
               <div id="unity-progress-bar-full"></div>
             </div>
           </div>
@@ -43,7 +43,7 @@
           warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
         }
         var div = document.createElement('div');
-        div.innerHTML = msg;
+        div.textContent = msg;
         warningBanner.appendChild(div);
         if (type == 'error') div.style = 'background: red; padding: 10px;';
         else {
@@ -57,12 +57,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/06c26320c4fa7a4b9b228a27f7d3a553.loader.js";
+      var loaderUrl = buildUrl + "/8b04e1a348fcdcf814996bcc66dcb141.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/ff0de3d6baa34ec46351a1e62f3d47f6.data.unityweb",
+        dataUrl: buildUrl + "/3b28adfbea6cb633e4c57582a29954fc.data.unityweb",
         frameworkUrl: buildUrl + "/bc88c45c8b6372a42642e72ad47c3c82.framework.js.unityweb",
-        codeUrl: buildUrl + "/b67f65eb1bb4c0bcf6ef96d0a76b867a.wasm.unityweb",
+        codeUrl: buildUrl + "/bbff09544397e0f5631ff10ea78002f0.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
@@ -92,7 +92,7 @@
       // If you would like all file writes inside Unity Application.persistentDataPath
       // directory to automatically persist so that the contents are remembered when
       // the user revisits the site the next time, uncomment the following line:
-      // config.autoSyncPersistentDataPath = true;
+      config.autoSyncPersistentDataPath = true;
       // This autosyncing is currently not the default behavior to avoid regressing
       // existing user projects that might rely on the earlier manual
       // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
@@ -130,10 +130,12 @@
           if (progress < 1) {
             loadingContainer.style.display = "block";
             progressBarFull.style.width = 100 * progress + "%";
+            document.querySelector("#loading-label").textContent = "Carregando a aventura… " + Math.round(progress * 100) + "%";
           } else {
             loadingContainer.style.display = "none";
           }
         }).then((unityInstance) => {
+                canvas.focus();
                 document.querySelector("#unity-fullscreen-button").onclick = () => {
                   unityInstance.SetFullscreen(1);
                 };

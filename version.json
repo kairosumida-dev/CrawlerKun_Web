@@ -1,0 +1,11 @@
+{
+  "release": "2026-10-13-refinamento",
+  "builtAt": "2026-10-13T21:46:49.463088+00:00",
+  "features": [
+    "combate",
+    "mestres",
+    "equipamentos",
+    "objetivos",
+    "5 slots"
+  ]
+}
