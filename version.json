@@ -1,6 +1,6 @@
 {
-  "release": "2026-10-14-navegacao-piso",
-  "builtAt": "2026-10-14T22:35:36.023078+00:00",
+  "release": "2026-10-14-pocao-selos",
+  "builtAt": "2026-10-14T22:44:02.898262+00:00",
   "features": [
     "combate",
     "mestres",
@@ -14,6 +14,9 @@
     "passagens nas paredes",
     "chegada na praça",
     "inimigos contornam obstáculos",
-    "piso alinhado à colisão"
+    "piso alinhado à colisão",
+    "poção rápida no HUD",
+    "baús secretos",
+    "tooltip de técnicas"
   ]
 }
