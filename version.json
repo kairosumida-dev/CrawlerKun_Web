@@ -1,11 +1,17 @@
 {
-  "release": "2026-10-13-refinamento",
-  "builtAt": "2026-10-13T21:46:49.463088+00:00",
+  "release": "2026-10-14-exploracao-classes",
+  "builtAt": "2026-10-14T07:04:20.955239+00:00",
   "features": [
     "combate",
     "mestres",
     "equipamentos",
     "objetivos",
-    "5 slots"
+    "5 slots",
+    "gráficos baixo/médio/alto",
+    "otimizações de efeitos",
+    "armas por classe",
+    "técnicas aprendidas",
+    "passagens nas paredes",
+    "chegada na praça"
   ]
 }

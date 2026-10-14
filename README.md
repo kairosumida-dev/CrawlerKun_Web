@@ -4,10 +4,12 @@
 
 Protótipo de dungeon crawler de ação com câmera isométrica, cidade medieval e masmorras procedurais.
 
-Esta versão permite formar um grupo com mestres das classes, consultar os equipamentos pelos retratos e concluir cada andar derrotando seu guardião. Após resgatar a recompensa, continue a descida ou use o marco para voltar à cidade. Ressurreição acontece somente na cidade.
+Forme um grupo com mestres das classes e explore os andares. Derrotar o guardião libera a descida, sem prêmio automático. Armas como saque aparecem apenas em baús e cada classe usa suas famílias de arma. Técnicas aparecem na barra somente depois de aprendidas. Alas laterais são acessadas caminhando por passagens nas paredes.
 
-Os controles e suas configurações ficam dentro do jogo. Itens descartados exigem a ação **Interagir** para recolher novamente. O save é local ao navegador; use o mesmo navegador e endereço para continuar.
+Para retornar à cidade, use um pergaminho e permaneça sobre a marca por dois segundos. Um novo pergaminho substitui a marca anterior. Todos chegam à área de runas no centro da praça. A derrota de todo o grupo encerra a expedição com resgate à cidade. Ressurreição acontece somente na cidade.
 
-A versão web atual roda localmente, com companheiros controlados pelo jogo. Multiplayer está fora desta versão.
+Em Pausa → Opções, escolha gráficos Baixo, Médio ou Alto. O padrão no navegador é Médio. Controles ficam dentro do jogo. Itens descartados exigem Interagir para recolher novamente. O save é local ao navegador; use o mesmo navegador e endereço para continuar.
 
-Este repositório contém somente arquivos compilados para WebGL. Os assets e o projeto Unity não são distribuídos aqui.
+A versão Web roda localmente, com companheiros controlados pelo jogo. Multiplayer está fora desta versão.
+
+Este repositório contém somente o jogo compilado para WebGL, com Brotli, cache e nomes por hash. Os assets-fonte e o projeto Unity não são distribuídos aqui.

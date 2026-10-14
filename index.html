@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>CrawlerKun — Dungeon Crawler</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="TemplateData/style.css?v=b55aa5c32182">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -57,12 +57,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/8b04e1a348fcdcf814996bcc66dcb141.loader.js";
+      var loaderUrl = buildUrl + "/f5695c85102bf377593d473b046e70be.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/3b28adfbea6cb633e4c57582a29954fc.data.unityweb",
+        dataUrl: buildUrl + "/089e4382a4cc88583cf59356b8efe925.data.unityweb",
         frameworkUrl: buildUrl + "/bc88c45c8b6372a42642e72ad47c3c82.framework.js.unityweb",
-        codeUrl: buildUrl + "/bbff09544397e0f5631ff10ea78002f0.wasm.unityweb",
+        codeUrl: buildUrl + "/c5bb8d9435d52aed7445bd99a170baf5.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
@@ -126,7 +126,8 @@
         const loadingContainer = document.querySelector("#unity-loading-container");
         const progressBarFull = document.querySelector("#unity-progress-bar-full");
 
-        createUnityInstance(canvas, config, (progress) => {
+        config.devicePixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
+          createUnityInstance(canvas, config, (progress) => {
           if (progress < 1) {
             loadingContainer.style.display = "block";
             progressBarFull.style.width = 100 * progress + "%";
