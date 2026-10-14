@@ -1,6 +1,6 @@
 {
-  "release": "2026-10-14-exploracao-classes",
-  "builtAt": "2026-10-14T07:04:20.955239+00:00",
+  "release": "2026-10-14-navegacao-piso",
+  "builtAt": "2026-10-14T16:04:50.885572+00:00",
   "features": [
     "combate",
     "mestres",
@@ -12,6 +12,8 @@
     "armas por classe",
     "técnicas aprendidas",
     "passagens nas paredes",
-    "chegada na praça"
+    "chegada na praça",
+    "inimigos contornam obstáculos",
+    "piso alinhado à colisão"
   ]
 }
