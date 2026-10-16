@@ -1,6 +1,6 @@
 {
-  "release": "2026-10-14-pocao-selos",
-  "builtAt": "2026-10-14T22:44:02.898262+00:00",
+  "release": "2026-10-15-toque-temporario",
+  "builtAt": "2026-10-16T00:34:01.823100+00:00",
   "features": [
     "combate",
     "mestres",
@@ -17,6 +17,10 @@
     "piso alinhado à colisão",
     "poção rápida no HUD",
     "baús secretos",
-    "tooltip de técnicas"
+    "tooltip de técnicas",
+    "controles temporários de celular",
+    "menus multitouch",
+    "oficinas e atividades na dungeon",
+    "evoluções e campanha"
   ]
 }

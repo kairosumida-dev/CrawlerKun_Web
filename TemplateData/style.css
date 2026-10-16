@@ -29,3 +29,6 @@ body { background: #15191f; color: #eadcc4; overflow: hidden; font-family: syste
 #unity-progress-bar-empty { margin: 12px auto; }
 #loading-label { text-align: center; font-size: 14px }
 #unity-warning { z-index: 5; max-width: 80%; color: #16191e; }
+
+/* TEMPORARY_WEB_TOUCH */
+#unity-canvas { touch-action: none; }
